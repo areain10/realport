@@ -38,8 +38,9 @@ h2{
 	font-family:'Red Hat Display', sans-serif;
 }
 .cardtext h2{
-transform-origin:2% 2%;
-	transform:rotate(90deg) translate(35%,80%);
+	text-align:left;
+	transform-origin:10% 10%;
+transform:rotate(90deg) translate(10%,-50%);
 }
 header h4 {
 	position:absolute;
