@@ -5,6 +5,10 @@
 	font-family: 'Poppins', sans-serif;
 }
 
+html{
+	scroll-behaviour:smooth;
+}
+
 header{
 	position:relative;
 	left:0;
@@ -17,7 +21,14 @@ h1{
 	font-size:10rem;
 	font-family: 'Red Hat Display', sans-serif;
 }
-
+h2{
+	font-size:5rem;
+	font-family:'Red Hat Display', sans-serif;
+}
+.cardtext h2{
+	transform-origin:2 2;
+	transform:rotate(90deg) translate(30%,70%);
+}
 header h4 {
 	position:absolute;
 	left:10%;
@@ -106,9 +117,13 @@ body {
   background: #f1dac4;
   color: black;
   height: 100vh;
-  display:block;
   text-align: center;
   place-items:center;
+}
+section{
+	width:100vw;
+	height:100%;
+	position:relative;
 }
 .navigation{
   background-color:white;
@@ -126,61 +141,82 @@ body {
   width:100vw;
   height:60%;
   position:relative;
+  margin:auto;
+  transform:translate(-10%,0%) scale(1.2);
   transition: transform 400ms ease;
 }
 .card{
   top:20%;
   display:flex;
-  justify-content:center;
-  align-items:center;
+  justify-content:left;
+  align-items:left;
   overflow:hidden;
-  width:20vmin;
-  aspect-ratio:5/7;
+  width:40vmin;
+  aspect-ratio:10/7;
   position:absolute;
   transition:transform 800ms cubic-bezier(.06,.65,.19,.93);
 }
 
-.card img{
+.halfcard{
+	width:20vmin;
+	aspect-ratio:5/7;
+}
+
+.cardtext{
+	opacity:0;
+  transition:transform 800ms cubic-bezier(.06,.65,.19,.93);
+}
+
+.cardtext.active{
+	opacity:1;
+	transition:ease-in-out 0.5;
+}
+
+.cartext.fade{
+	opacity:0;
+	transition: ease-in-out 0.5s;
+}
+.cardimage{
 	flex-shrink:0;
 	max-width:100%;
 	max-height:100%;
 }
 
 .card:nth-child(1){
-  transform:translate(420%,42%) rotate(-20deg);
+  transform:translate(240%,30%) rotate(-20deg);
 }
 
 .card-container:hover >.card:nth-child(1){
-  transform:translate(50%,20%) rotate(0deg);
+  transform:translate(85%,20%) rotate(0deg);
 }
 
 .card-container:hover >.card:nth-child(2){
-  transform:translate(270%,20%) rotate(0deg);
+  transform:translate(188%,20%) rotate(0deg);
 }
 
 .card-container:hover >.card:nth-child(3){
-  transform:translate(490%,20%) rotate(0deg);
+  transform:translate(291%,20%) rotate(0deg);
 }
 
 .card-container:hover >.card:nth-child(4){
-  transform:translate(710%,20%) rotate(0deg);
+  transform:translate(394%,20%) rotate(0deg);
 }
 
 .card:nth-child(2){
-  transform:translate(440%,40%) rotate(-10deg);
+  transform:translate(260%,28%) rotate(-10deg);
 }
 
 .card:nth-child(3){
-  transform:translate(460%,38%) rotate(0);
+  transform:translate(280%,26%) rotate(0);
 }
 
 .card:nth-child(4){
-  transform:translate(490%,40%) rotate(7deg);
+  transform:translate(310%,28%) rotate(7deg);
 }
 
 /* ABOUT */
 
-.about-container{
+.large-container{
 	background-color:purple;
 	width:100vw;
 	height:100%;
