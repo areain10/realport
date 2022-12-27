@@ -8,7 +8,6 @@ window.addEventListener('DOMContentLoaded',()=>{
                         setTimeout(()=>{
                                 span.classList.add('active');
 				setTimeout(()=>{
-					span.classList.add('quartz');
 				},300)
                         },(idx+1)*400)
                 })
@@ -17,8 +16,6 @@ window.addEventListener('DOMContentLoaded',()=>{
 	setTimeout(()=>{
                 nameSpan.forEach((span,idx)=>{
                         setTimeout(()=>{
-				span.classList.remove('quartz');
-				span.classList.add('white');
 				setTimeout(()=>{
 
                                 	span.classList.remove('active');
