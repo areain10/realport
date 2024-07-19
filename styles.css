@@ -261,7 +261,7 @@ section{
 
 /* Port */
 .slideshow{
-	width:100%;
+	width:100vw;
     max-width:100vw;
 	position:absolute;
 	margin:auto;
@@ -333,11 +333,11 @@ section{
 
 }
   .slidepic{
-	max-width: 100%;
-	width:auto;
-	max-height:50%;
-	height:auto;
-	position: relative;
+	
+	width:110vw;
+	object-fit: cover;
+	height:100vh;
+	position: absolute
   }
 
 
